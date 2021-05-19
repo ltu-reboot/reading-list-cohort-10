@@ -56,21 +56,17 @@ for(let counter = 0; counter < books.length; counter++ ) {
 3. Show whether or not i have read the book
    IF has read = true
     THEN i have read the book
-
-  IF has read = false
+  ELSE has read = false
   i haven't read the book
 
   IF HASREAD = true
       'i have read the TITLE by AUTHOR'
-      
-  IF HASREAD = false
-      'i haven't read the TITLE by AUTHOR'
+  ELSE 
+    'i haven't read the TITLE by AUTHOR'
 
   if(hasRead) {
     console.log(  'i have read the TITLE by AUTHOR' )
-  } 
-  
-  if(!hasRead){
+  } else {
     'i haven't read the TITLE by AUTHOR'
   }
 
@@ -94,9 +90,9 @@ for(let counter = 0; counter < books.length; counter++ ) {
   // console.log( books[counter].title, books[counter].author  );
 
   if(books[counter].hasRead) {
-    console.log( `i have read the ${books[counter].title} by ${books[counter].author}` );
+    console.log( `I have read the ${books[counter].title} by ${books[counter].author}` );
   } else {
-    `i haven't read the ${books[counter].title} by ${books[counter].author}`
+    console.log(`I haven't read the ${books[counter].title} by ${books[counter].author}`);
   }
 
 }
